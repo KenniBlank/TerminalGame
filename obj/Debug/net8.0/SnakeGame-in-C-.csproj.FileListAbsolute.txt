@@ -1,0 +1,15 @@
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/bin/Debug/net8.0/SnakeGame-in-C-
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/bin/Debug/net8.0/SnakeGame-in-C-.deps.json
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/bin/Debug/net8.0/SnakeGame-in-C-.runtimeconfig.json
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/bin/Debug/net8.0/SnakeGame-in-C-.dll
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/bin/Debug/net8.0/SnakeGame-in-C-.pdb
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.GeneratedMSBuildEditorConfig.editorconfig
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.AssemblyInfoInputs.cache
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.AssemblyInfo.cs
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.csproj.CoreCompileInputs.cache
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.sourcelink.json
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.dll
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/refint/SnakeGame-in-C-.dll
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.pdb
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/SnakeGame-in-C-.genruntimeconfig.cache
+/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/Debug/net8.0/ref/SnakeGame-in-C-.dll
