@@ -1,7 +1,10 @@
-﻿string playerChar = "🐣";
-string foodChar = "🫛";
+﻿int WindowWidth = 0;
+int WindowHeight = 0;
+
+string playerChar = "🐣";
+string foodChar = "🫐🫐";
 bool playState = true;
-int playerX = 10, playerY = 10;
+int playerX = WindowWidth / 10, playerY = WindowHeight / 10;
 // float speed = 1f;
 
 bool foodInScreen = false;
@@ -9,11 +12,9 @@ int foodX = 0;
 int foodY = 0;
 
 Random rand = new Random();
-
 int score = 0;
 
-int WindowWidth = 0;
-int WindowHeight = 0;
+
 
 ConsoleColor originalForegroundColor = Console.ForegroundColor;
 ConsoleColor originalBackgroundColor = Console.BackgroundColor;
@@ -50,6 +51,8 @@ void Update()
     {
         food();
         player();
+        gravity();
+        changeInTerminalBoundaryError();
     } while (playState);
     // quit();
 }
@@ -61,19 +64,16 @@ void player()
     {
         case ConsoleKey.UpArrow:
         case ConsoleKey.W:
-            trailY = playerY;
             playerY--;
             break;
 
         case ConsoleKey.LeftArrow:
         case ConsoleKey.A:
-            trailX = playerX;
             playerX--;
             break;
 
         case ConsoleKey.RightArrow:
         case ConsoleKey.D:
-            trailX = playerX;
             playerX++;
             break;
 
@@ -201,9 +201,19 @@ void setBoundary()
 
 
 
-// void changeInTerminalBoundaryError()
-// {
-//     Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2 - 1);
-//     Console.Write("You have changed the Terminal size");
-//     quitGame();
-// }
+void changeInTerminalBoundaryError()
+{
+    if (Console.WindowWidth != WindowWidth || Console.WindowHeight != WindowHeight || Console.WindowHeight < 360)
+    {
+        Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2 - 1);
+        Console.Write("You have changed the Terminal size or minimum terminal size wasn't achieved");
+        System.Threading.Thread.Sleep(1000);
+        quitGame();
+    }
+
+}
+
+void gravity()
+{
+    
+}
