@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "thJIqDZ8oZxQv++Be23ubkmHqvR7b2IczUo51+9NI0sh/MV83MIlxU2UjAA3gGFsoRsevy0JRILra9nPpnaEtQ==",
+  "dgSpecHash": "KWV7M6LmtSFxCAC5lU+IA/Cn5hCnMwm2GW81Y2cXZDXM+qYMJieJRdZ+t0YCOx2ZbtpIcB/S/hm1pVmmDQdjvw==",
   "success": true,
-  "projectFilePath": "/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/SnakeGame-in-C-.csproj",
+  "projectFilePath": "/home/kenni-blank/Documents/Projects/TerminalGame/GameInC#Terminal.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

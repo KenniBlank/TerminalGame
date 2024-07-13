@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "SnakeGame-in-C-/1.0.0": {
+      "GameInC#Terminal/1.0.0": {
         "runtime": {
-          "SnakeGame-in-C-.dll": {}
+          "GameInC#Terminal.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "SnakeGame-in-C-/1.0.0": {
+    "GameInC#Terminal/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

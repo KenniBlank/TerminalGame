@@ -1,0 +1,14 @@
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/bin/Debug/net8.0/GameInC#Terminal
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/bin/Debug/net8.0/GameInC#Terminal.deps.json
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/bin/Debug/net8.0/GameInC#Terminal.runtimeconfig.json
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/bin/Debug/net8.0/GameInC#Terminal.dll
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/bin/Debug/net8.0/GameInC#Terminal.pdb
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/GameInC#Terminal.GeneratedMSBuildEditorConfig.editorconfig
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/GameInC#Terminal.AssemblyInfoInputs.cache
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/GameInC#Terminal.AssemblyInfo.cs
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/GameInC#Terminal.csproj.CoreCompileInputs.cache
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/GameInC#Terminal.dll
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/refint/GameInC#Terminal.dll
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/GameInC#Terminal.pdb
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/GameInC#Terminal.genruntimeconfig.cache
+/home/kenni-blank/Documents/Projects/GameInC#Terminal/obj/Debug/net8.0/ref/GameInC#Terminal.dll

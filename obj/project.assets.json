@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/SnakeGame-in-C-.csproj",
-      "projectName": "SnakeGame-in-C-",
-      "projectPath": "/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/SnakeGame-in-C-.csproj",
+      "projectUniqueName": "/home/kenni-blank/Documents/Projects/TerminalGame/GameInC#Terminal.csproj",
+      "projectName": "GameInC#Terminal",
+      "projectPath": "/home/kenni-blank/Documents/Projects/TerminalGame/GameInC#Terminal.csproj",
       "packagesPath": "/home/kenni-blank/.nuget/packages/",
-      "outputPath": "/home/kenni-blank/Documents/Projects/SnakeGame-in-C-/obj/",
+      "outputPath": "/home/kenni-blank/Documents/Projects/TerminalGame/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/kenni-blank/.nuget/NuGet/NuGet.Config"
