@@ -1,3 +1,5 @@
+using System.Globalization;
+
 int WindowWidth;
 int WindowHeight;
 
@@ -5,7 +7,7 @@ string playerChar = "🐣";
 string playerChar2 = "🐥";
 string playerShoot = "🥚";
 
-int fireRate = 1;
+int fireRate = 10;
 int[] shotPosY = new int[fireRate];
 int[] shotPosX = new int[fireRate];
 int toShootScoreAmount = 1;
@@ -84,8 +86,8 @@ void Update()
     do
     {
         food();
-        
-        if (rand.Next(0, 100) % 30 == 0)
+
+        if (rand.Next(0, 100) % 49 == 0)
         {
             foodSpawn();
         }
@@ -109,27 +111,33 @@ void Update()
         enemySpeed += 0.00008f;
         System.Threading.Thread.Sleep(35); // if 100, 0.1s delay everyupdate ie. fps =  10. Do the math
     } while (playState);
-    quitGame("How was this escape sequence achieved. Not Possible. Send GamePlay");
+    quitGame("How was this escape sequence achieved. Not Possible. That's a bug. Send GamePlay");
 }
 
 void shotUP()
 {
-    if (shotPosX[0] == 0 && shotPosY[0] == 0)
+    for (int i = 0; i < shotPosY.Length; i++)
     {
-        return;
-    }
-    else if (shotPosY[0] == 2)
-    {
-        shotPosX[0] = 0;
-        shotPosY[0] = 0;
-        return;
-    }
+        if (shotPosX[i] == 0 && shotPosY[i] == 0)
+        {
+            continue;
+        }
+        else if (shotPosY[i] == 1)
+        {
+            shotPosX[i] = 0;
+            shotPosY[i] = 0;
+            continue;
+        }
 
-    Console.SetCursorPosition(shotPosX[0], shotPosY[0]);
-    Console.Write("  ");
-    shotPosY[0] -= 1;
-    Console.SetCursorPosition(shotPosX[0], shotPosY[0]);
-    Console.Write(playerShoot);
+        Console.SetCursorPosition(shotPosX[i], shotPosY[i]);
+        Console.Write("  ");
+
+        shotPosY[i] -= 1;
+        
+        Console.SetCursorPosition(shotPosX[i], shotPosY[i]);
+        Console.Write(playerShoot);
+    }
+    return;
 }
 
 void player()
@@ -152,12 +160,12 @@ void player()
                 if (playerX > 2)
                 {
                     playerX--;
-                }   
+                }
                 break;
 
             case ConsoleKey.RightArrow:
             case ConsoleKey.D:
-                if  (playerX < WindowWidth - 3)
+                if (playerX < WindowWidth - 3)
                 {
                     playerX++;
                 }
@@ -174,19 +182,26 @@ void player()
             case ConsoleKey.Escape:
                 quitGame("Escape Button Pressed");
                 break;
-            
+
             case ConsoleKey.Spacebar:
                 if (score >= toShootScoreAmount)
                 {
                     score -= toShootScoreAmount;
-                    shotPosY[0] = playerY - 1;
-                    shotPosX[0] = playerX;
+                    for (int i = 0; i < fireRate; i++)
+                    {
+                        if (shotPosX[i] == 0 && shotPosY[i] == 0)
+                        {
+                            shotPosY[i] = playerY - 1;
+                            shotPosX[i] = playerX;
+                            break;
+                        }                        
+                    } 
                 }
                 break;
-                
+
             default:
                 break;
-                
+
         }
     }
 
@@ -203,7 +218,7 @@ void player()
 void enemy()
 {
     // enemySpawn();
-    if (((int) enemySpawnX == playerX || (int) enemySpawnX == playerX - 1 || (int) enemySpawnX == playerX + 1) && (int) enemySpawnY == shotPosY[0])
+    if (((int)enemySpawnX == playerX || (int)enemySpawnX == playerX - 1 || (int)enemySpawnX == playerX + 1) && (int)enemySpawnY == shotPosY[0])
     {
         enemySpawn();
         enemySpeed -= 0.01f;
