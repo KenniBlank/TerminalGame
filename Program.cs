@@ -15,7 +15,7 @@ int toShootScoreAmount = 1;
 string enemyChar = "👾";
 int enemySpawnX = 0;
 float enemySpawnY = 0;
-float enemySpeed = 0.01f;
+float enemySpeed = 0.0001f;
 
 string[] deathMessages = [
     "Enemy Has Landed. YOU DIED!",
@@ -133,7 +133,7 @@ void shotUP()
         Console.Write("  ");
 
         shotPosY[i] -= 1;
-        
+
         Console.SetCursorPosition(shotPosX[i], shotPosY[i]);
         Console.Write(playerShoot);
     }
@@ -194,8 +194,8 @@ void player()
                             shotPosY[i] = playerY - 1;
                             shotPosX[i] = playerX;
                             break;
-                        }                        
-                    } 
+                        }
+                    }
                 }
                 break;
 
@@ -218,19 +218,21 @@ void player()
 void enemy()
 {
     // enemySpawn();
-    if (((int)enemySpawnX == playerX || (int)enemySpawnX == playerX - 1 || (int)enemySpawnX == playerX + 1) && (int)enemySpawnY == shotPosY[0])
+    for (int i = 0; i < fireRate; i++)
     {
-        enemySpawn();
-        enemySpeed -= 0.01f;
-        score++;
+        if (((int)enemySpawnX == playerX || (int)enemySpawnX == playerX - 1 || (int)enemySpawnX == playerX + 1) && (int)enemySpawnY == shotPosY[i])
+        {
+            enemySpawn();
+            enemySpeed -= 0.01f;
+            score++;
+            return;
+        }
+        if ((int)enemySpawnY >= barHeight)
+        {
+            quitGame(deathMessages[rand.Next(0, deathMessages.Length)]);
+        }
+        gravity('E');
     }
-    if ((int)enemySpawnY >= barHeight)
-    {
-        int i = rand.Next(0, deathMessages.Length);
-        quitGame(deathMessages[i]);
-    }
-    gravity('E');
-
 }
 
 void enemySpawn()
